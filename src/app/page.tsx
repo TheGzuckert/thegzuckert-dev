@@ -4,6 +4,7 @@ import { Badge } from '@/components/ui/badge'
 import { LuSunMoon } from 'react-icons/lu'
 import { IoMdMoon } from 'react-icons/io'
 import { Card } from '@/components/card-job/card'
+import { Trabalhos } from '@/mocks/trabalhos'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 
 export default function Home() {
@@ -48,11 +49,8 @@ export default function Home() {
               </>
             )}
           </Badge>
-
           <Badge variant={'outline'}>TheGzuckert</Badge>
-
           <Badge variant={'outline'}>22 - Anos</Badge>
-
           <Badge variant={'outline'}>IFSP</Badge>
         </div>
         <div className="flex flex-col max-w-screen-sm">
@@ -61,40 +59,28 @@ export default function Home() {
           <p className="mt-1 font-bold">Fullstack Developer</p>
 
           <p className="mt-1 mb-1 text-sm">
-            Desenvolvedor Web com seis meses de experiência no mercado.
-            Atualmente trabalho como Analista de Suporte e DBA pela Bten,
-            entretanto busco uma oportunidade de voltar para o mercado de
-            desenvolvimento.
+            Desenvolvedor Web com seis meses de experiência. Hoje trabalho como
+            Analista de Suporte e DBA pela Bten, e Atualmente participo de uma
+            comunidade Open Source chamda DevHat para ganhar mais experiencia
+            como desenvolvedor, Entretanto estou aberto para novos desafios.
           </p>
+          {/* melhorar texto */}
         </div>
       </header>
       <section className="mt-4 max-w-screen-sm mr-4">
         <div>
           <p className="font-bold">💼 Experiencias profissionais</p>
-          <Card
-            company="Bten"
-            date="Oct 17, 2022 - Atualmente"
-            title="Analista de Suporte e DBA"
-            location="Remoto"
-            image="/BtenIcon.jpg"
-            fallbackImage="BtenIcon.jpg"
-          />
-          <Card
-            company="DevHatt"
-            date="Nov 22, 2023 - Atualmente"
-            title="Desenvolvedor Web"
-            location="Remoto"
-            image="/Devhat.jpg"
-            fallbackImage="DevHat.jpg"
-          />
-          <Card
-            company="Corelab"
-            date="Fev 28, 2022 - 01 Jul 2022"
-            title="Desenvolvedor Web -  Treinee"
-            location="Remoto"
-            image="/Corelab.jpg"
-            fallbackImage="Corelab.jpg"
-          />
+          {Trabalhos.map((trabalho) => (
+            <Card
+              key={trabalho.id}
+              company={trabalho.company}
+              date={trabalho.date}
+              title={trabalho.title}
+              location={trabalho.location}
+              image={trabalho.image}
+              fallbackImage={trabalho.fallbackImage}
+            />
+          ))}
         </div>
       </section>
     </div>
