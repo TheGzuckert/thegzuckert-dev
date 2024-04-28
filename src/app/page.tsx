@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { Badge } from '@/components/ui/badge'
 import { LuSunMoon } from 'react-icons/lu'
 import { IoMdMoon } from 'react-icons/io'
-import { Card } from '@/components/card/card'
+import { Card } from '@/components/card-job/card'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 
 export default function Home() {
@@ -78,6 +78,14 @@ export default function Home() {
             location="Remoto"
             image="/BtenIcon.jpg"
             fallbackImage="BtenIcon.jpg"
+          />
+          <Card
+            company="DevHatt"
+            date="Nov 22, 2023 - Atualmente"
+            title="Desenvolvedor Web"
+            location="Remoto"
+            image="/Devhat.jpg"
+            fallbackImage="DevHat.jpg"
           />
           <Card
             company="Corelab"
