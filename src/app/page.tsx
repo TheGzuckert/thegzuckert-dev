@@ -31,7 +31,7 @@ export default function Home() {
             <AvatarFallback>Gustavo Zuckert</AvatarFallback>
           </Avatar>
         </div>
-        <div className="flex gap-2">
+        <div className="flex gap-2 cursor-pointer">
           <Badge
             variant={'outline'}
             onClick={toggleDarkMode}
@@ -44,7 +44,7 @@ export default function Home() {
               </>
             ) : (
               <>
-                <IoMdMoon className="text-yellow-500 mr-1" />
+                <IoMdMoon className="text-yellow-500 mr-1 bg" />
                 Modo Claro
               </>
             )}
@@ -58,7 +58,7 @@ export default function Home() {
 
           <p className="mt-1 font-bold">Fullstack Developer</p>
 
-          <p className="mt-1 mb-1 text-sm">
+          <p className="mt-1 mb-1 text-sm mr-2">
             Desenvolvedor Web com seis meses de experiência. Hoje trabalho como
             Analista de Suporte e DBA pela Bten, e Atualmente participo de uma
             comunidade Open Source chamda DevHat para ganhar mais experiencia

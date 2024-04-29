@@ -30,7 +30,7 @@ export const Card = ({
       </span>
       <div className="flex flex-col justify-between flex-grow">
         <div className="flex justify-between items-center mb-2">
-          <Badge>{company}</Badge>
+          <Badge className="bg-purple-500">{company}</Badge>
           <p className="text-sm text-gray-400">{date}</p>
         </div>
         <div className="flex flex-col">
