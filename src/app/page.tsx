@@ -23,8 +23,11 @@ export default function Home() {
   }, [darkmode])
 
   return (
-    <div className="ml-5 mt-5 md:flex">
-      <div id="left side">
+    <div className="md:flex">
+      <div
+        id="left side"
+        className="flex h-screen w-full flex-col max-2xl:mx-auto 2xl:max-w-[640px] 2xl:p-10"
+      >
         <header className="flex flex-col gap-3">
           <div className="mb-3">
             <Avatar className="w-24 h-24 flex-shrink-0 rounded-xl">
@@ -65,16 +68,16 @@ export default function Home() {
 
             <p className="mt-1 mb-1 text-sm mr-2">
               Desenvolvedor Web com seis meses de experiência. Hoje trabalho
-              como Analista de Suporte e DBA pela Bten, e Atualmente participo
+              como Analista de Suporte e DBA pela Bten, e Participo Atualmente
               de uma comunidade Open Source chamada DevHat para ganhar mais
-              experiencia como desenvolvedor, Entretanto estou aberto para novos
+              experiencia como desenvolvedor, entretanto estou aberto para novos
               desafios.
             </p>
             {/* melhorar texto */}
           </div>
         </header>
         <section className="mt-4 max-w-screen-sm mr-4">
-          <p className="font-bold  mb-2">💼 Experiencias profissionais</p>
+          <p className="font-bold mb-2">💼 Experiencias profissionais</p>
           {Trabalhos.map((trabalho) => (
             <Card
               key={trabalho.id}
@@ -90,9 +93,21 @@ export default function Home() {
       </div>
       <div
         id="right side 1"
-        className="grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left"
+        className="flex h-screen w-full flex-col gap-8 max-2xl:mx-auto 2xl:max-w-[640px] 2xl:p-10"
       >
-        <section className="max-w-screen-sm mr-4">
+        <p className="font-bold">📱 Redes Sociais</p>
+        <section className="grid max-h-[400px] max-w-[400px] grid-cols-2 grid-rows-2">
+          {Socials.map((social) => (
+            <CardSocial
+              key={social.id}
+              title={social.title}
+              image={social.image}
+              fallbackImage={social.fallbackImage}
+            />
+          ))}
+        </section>
+        <p className="font-bold">📱 Redes Sociais</p>
+        <section className="grid max-h-[400px] max-w-[400px] grid-cols-2 grid-rows-2">
           {Socials.map((social) => (
             <CardSocial
               key={social.id}
@@ -103,10 +118,6 @@ export default function Home() {
           ))}
         </section>
       </div>
-      <div
-        id="right side 1"
-        className="grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left"
-      ></div>
     </div>
   )
 }

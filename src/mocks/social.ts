@@ -26,4 +26,10 @@ export const Socials: Social[] = [
     image: '/Corelab.jpg',
     fallbackImage: 'Devhat',
   },
+  {
+    id: nanoid(),
+    title: '📷 Camera',
+    image: '/Corelab.jpg',
+    fallbackImage: 'Devhat',
+  },
 ]
