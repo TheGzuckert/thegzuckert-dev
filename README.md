@@ -2,6 +2,11 @@
 
 ![image](https://github.com/TheGzuckert/thegzuckert-dev/assets/83929799/e06e379a-ffe2-4dc7-9243-6f1353405cb7)
 
+### TODO:
+
+- [] Configurar button para baixar o curriculo
+- [] Configurar Redirect para redes sociais ao clicar no botão
+- [] Fazer Deploy na Vercel
 
 ## Getting Started
 

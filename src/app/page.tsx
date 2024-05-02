@@ -8,8 +8,8 @@ import { Trabalhos } from '@/mocks/trabalhos'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { CardSocial } from '@/components/card-social/cardSocial'
 import { Socials } from '@/mocks/social'
-// import { Tecnologia } from '@/mocks/tecnologias'
-// import CardTec from '@/components/card-tecnologies/cardTec'
+import CardTec from '@/components/card-tecnologies/cardTec'
+import { Tecnologia } from '@/mocks/tecnologias'
 
 export default function Home() {
   const [darkmode, setDarkmode] = useState(false)
@@ -60,7 +60,6 @@ export default function Home() {
             <Badge variant={'outline'}>TheGzuckert</Badge>
             <Badge variant={'outline'}>22 - Anos</Badge>
             <Badge variant={'outline'}>IFSP</Badge>
-            <Badge variant={'outline'}>Curriculo</Badge>
           </div>
           <div className="flex flex-col max-w-screen-sm">
             <h1 className="font-bold text-xl">Gustavo Dos Santos Zuckert</h1>
@@ -94,7 +93,7 @@ export default function Home() {
       </div>
       <div
         id="right side 1"
-        className="w-full h-max-screen max-2xl:mx-auto 2xl:max-w-[600px] 2xl:p-9"
+        className="w-full h-max-screen mt-4 max-2xl:mx-auto 2xl:max-w-[600px] 2xl:p-9"
       >
         <p className="font-bold mb-2">📱 Redes Sociais</p>
         <section className="grid grid-cols-2 grid-rows-2 mt-3">
@@ -107,14 +106,14 @@ export default function Home() {
             />
           ))}
         </section>
-        <p className="font-bold mb-2 mt-8">📚 Principais Tecnologias</p>
+        <p className="font-bold mb-2 mt-4">📚 Principais Tecnologias</p>
         <section className="grid grid-cols-2 grid-rows-2 mt-3.5">
-          {Socials.map((social) => (
-            <CardSocial
-              key={social.id}
-              title={social.title}
-              image={social.image}
-              fallbackImage={social.fallbackImage}
+          {Tecnologia.map((tecnologias) => (
+            <CardTec
+              key={tecnologias.id}
+              name={tecnologias.name}
+              image={tecnologias.image}
+              fallbackImage={tecnologias.fallbackImage}
             />
           ))}
         </section>

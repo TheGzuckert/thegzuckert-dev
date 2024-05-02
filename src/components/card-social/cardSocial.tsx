@@ -14,7 +14,6 @@ export const CardSocial = ({
   fallbackImage,
 }: CardSocialProps) => {
   return (
-    // <div className="mb-2 cursor-pointer rounded-sm bg-card/25 text-foreground hover:bg-secondary/50 border p-4 mr-4 backdrop-brightness-110 transition-all duration-150 dark:shadow-black/15 flex">
     <div className="cursor-pointer mb-2 rounded-sm bg-card/25 text-foreground hover:bg-secondary/50 border p-7 mr-2 backdrop-brightness-110 transition-all duration-150 dark:shadow-black/15 flex items-start">
       <span className="mr-4">
         <Avatar className=" rounded-xl">

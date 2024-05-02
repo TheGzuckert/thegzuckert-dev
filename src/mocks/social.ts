@@ -10,26 +10,26 @@ export type Social = {
 export const Socials: Social[] = [
   {
     id: nanoid(),
-    title: '💼 Linkedin ',
-    image: '/BtenIcon.jpg',
-    fallbackImage: 'Bten',
-  },
-  {
-    id: nanoid(),
     title: '⌨️ Github ',
-    image: '/Devhat.jpg',
-    fallbackImage: 'Devhat',
-  },
-  {
-    id: nanoid(),
-    title: '✖ Twitter',
-    image: '/Corelab.jpg',
+    image: '/github.svg',
     fallbackImage: 'Devhat',
   },
   {
     id: nanoid(),
     title: '📷 instagram',
-    image: '/Corelab.jpg',
+    image: '/instagram.svg',
+    fallbackImage: 'Devhat',
+  },
+  {
+    id: nanoid(),
+    title: '💼 Linkedin ',
+    image: '/linkedin.svg',
+    fallbackImage: 'Bten',
+  },
+  {
+    id: nanoid(),
+    title: '✖ Twitter',
+    image: '/twitter.svg',
     fallbackImage: 'Devhat',
   },
 ]
