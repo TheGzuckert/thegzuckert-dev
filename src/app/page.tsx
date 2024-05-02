@@ -23,10 +23,10 @@ export default function Home() {
   }, [darkmode])
 
   return (
-    <div className="md:flex">
+    <div className="md:flex ml-2">
       <div
         id="left side"
-        className="flex h-screen w-full flex-col max-2xl:mx-auto 2xl:max-w-[640px] 2xl:p-10"
+        className="md:h-full md:p-20 lg:p-20 lg:pb-4 lg:pt-10 xl:grid xl:grid-cols-1"
       >
         <header className="flex flex-col gap-3">
           <div className="mb-3">
@@ -93,21 +93,10 @@ export default function Home() {
       </div>
       <div
         id="right side 1"
-        className="flex h-screen w-full flex-col gap-8 max-2xl:mx-auto 2xl:max-w-[640px] 2xl:p-10"
+        className="w-full h-max-screen flex-col gap-8 max-2xl:mx-auto 2xl:max-w-[600px] 2xl:p-10"
       >
-        <p className="font-bold">📱 Redes Sociais</p>
-        <section className="grid max-h-[400px] max-w-[400px] grid-cols-2 grid-rows-2">
-          {Socials.map((social) => (
-            <CardSocial
-              key={social.id}
-              title={social.title}
-              image={social.image}
-              fallbackImage={social.fallbackImage}
-            />
-          ))}
-        </section>
-        <p className="font-bold">📱 Redes Sociais</p>
-        <section className="grid max-h-[400px] max-w-[400px] grid-cols-2 grid-rows-2">
+        <p className="font-bold mb-2">📱 Redes Sociais</p>
+        <section className="grid grid-cols-2 grid-rows-2">
           {Socials.map((social) => (
             <CardSocial
               key={social.id}

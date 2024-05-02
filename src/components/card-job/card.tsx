@@ -33,11 +33,11 @@ export const Card = ({
           <Badge className="bg-violet-500" variant={'default'}>
             {company}
           </Badge>
-          <p className="text-xs text-gray-400">{date}</p>
+          <p className="text-sm text-gray-400">{date}</p>
         </div>
         <div className="flex flex-col">
           <p className="text-sm">{title}</p>
-          <h2 className="text-xs text-gray-400">{location}</h2>
+          <h2 className="text-sm text-gray-400">{location}</h2>
         </div>
       </div>
     </div>
