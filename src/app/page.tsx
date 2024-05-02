@@ -103,6 +103,7 @@ export default function Home() {
               title={social.title}
               image={social.image}
               fallbackImage={social.fallbackImage}
+              link={social.link}
             />
           ))}
         </section>

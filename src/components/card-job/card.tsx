@@ -28,8 +28,8 @@ export const Card = ({
           <AvatarFallback>{fallbackImage}</AvatarFallback>
         </Avatar>
       </span>
-      <div className="flex-col justify-between flex-grow">
-        <div className="flex justify-between items-center">
+      <div className="justify-between flex-grow">
+        <div className=" flex justify-between items-center">
           <Badge className="bg-violet-500" variant={'default'}>
             {company}
           </Badge>

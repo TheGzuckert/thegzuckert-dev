@@ -1,10 +1,11 @@
 import { nanoid } from 'nanoid'
 
 export type Social = {
-  id: string
+  id?: string
   title: string
   image?: string
   fallbackImage?: string
+  link: string
 }
 
 export const Socials: Social[] = [
@@ -12,24 +13,28 @@ export const Socials: Social[] = [
     id: nanoid(),
     title: '⌨️ Github ',
     image: '/github.svg',
-    fallbackImage: 'Devhat',
+    fallbackImage: 'Github',
+    link: 'https://github.com/TheGzuckert',
   },
   {
     id: nanoid(),
     title: '📷 instagram',
     image: '/instagram.svg',
-    fallbackImage: 'Devhat',
+    fallbackImage: 'Instagram',
+    link: 'https://www.instagram.com/gustavozuckert/',
   },
   {
     id: nanoid(),
     title: '💼 Linkedin ',
     image: '/linkedin.svg',
-    fallbackImage: 'Bten',
+    fallbackImage: 'Linkedin',
+    link: 'https://www.linkedin.com/in/thegzuckert/',
   },
   {
     id: nanoid(),
-    title: '✖ Twitter',
+    title: '🐥 Twitter',
     image: '/twitter.svg',
-    fallbackImage: 'Devhat',
+    fallbackImage: 'Twitter',
+    link: 'https://twitter.com/TheGzuckert',
   },
 ]
