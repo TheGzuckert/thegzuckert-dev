@@ -1,6 +1,7 @@
 ### Em desenvolvimento:
 
-![image](https://github.com/TheGzuckert/thegzuckert-dev/assets/83929799/e06e379a-ffe2-4dc7-9243-6f1353405cb7)
+![image](https://github.com/TheGzuckert/thegzuckert-dev/assets/83929799/a0af9981-a570-4304-b4f8-a459111d5e5e)
+
 
 ### TODO:
 
