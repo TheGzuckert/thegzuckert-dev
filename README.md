@@ -5,9 +5,9 @@
 
 ### TODO:
 
-- [] Configurar button para baixar o curriculo
-- [] Configurar Redirect para redes sociais ao clicar no botão
-- [] Fazer Deploy na Vercel
+ [] Configurar button para baixar o curriculo
+ [] Configurar Redirect para redes sociais ao clicar no botão
+ [] Fazer Deploy na Vercel
 
 ## Getting Started
 
