@@ -11,7 +11,7 @@
  - [x] Configurar Redirect para redes sociais ao clicar no botão
  - [x] Fazer Deploy na Vercel
 
-## Getting Started
+## Starting project
 
 First, run the development server:
 
@@ -21,7 +21,7 @@ or
 pnpm run dev
 ```
 
-Open [https://thegzuckert-dev.vercel.app/](https://thegzuckert-dev.vercel.app/) with your browser to see the result.
+Or [https://thegzuckert-dev.vercel.app/](https://thegzuckert-dev.vercel.app/) with your browser to see the result.
 
 
 ## Deploy on Vercel
