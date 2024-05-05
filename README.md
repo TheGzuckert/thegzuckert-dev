@@ -1,4 +1,4 @@
-### Em desenvolvimento:
+### Primeira versão:
 
 ![image](https://github.com/TheGzuckert/thegzuckert-dev/assets/83929799/a0af9981-a570-4304-b4f8-a459111d5e5e)
 
