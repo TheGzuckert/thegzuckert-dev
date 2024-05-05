@@ -8,7 +8,7 @@ import { Trabalhos } from '@/mocks/trabalhos'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { CardSocial } from '@/components/card-social/cardSocial'
 import { Socials } from '@/mocks/social'
-import CardTec from '@/components/card-tecnologies/cardTec'
+import { CardTec } from '@/components/card-tecnologies/cardTec'
 import { Tecnologia } from '@/mocks/tecnologias'
 
 export default function Home() {
@@ -113,7 +113,7 @@ export default function Home() {
             <CardTec
               key={tecnologias.id}
               name={tecnologias.name}
-              image={tecnologias.image}
+              title={tecnologias.title}
               fallbackImage={tecnologias.fallbackImage}
             />
           ))}

@@ -1,7 +1,7 @@
 import { nanoid } from 'nanoid'
 
 export type Trabalho = {
-  id: string
+  id?: string
   company: string
   title: string
   location: string

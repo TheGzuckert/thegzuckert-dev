@@ -1,7 +1,7 @@
 import { nanoid } from 'nanoid'
 
 export type Tecnologia = {
-  id: string
+  id?: string
   name: string
   title: string
   image?: string
