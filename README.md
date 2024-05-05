@@ -21,7 +21,7 @@ or
 pnpm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [https://thegzuckert-dev.vercel.app/](https://thegzuckert-dev.vercel.app/) with your browser to see the result.
 
 
 ## Deploy on Vercel
