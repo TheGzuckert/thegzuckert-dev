@@ -1,15 +1,17 @@
-### Em desenvolvimento:
+### Primeira versão:
 
 ![image](https://github.com/TheGzuckert/thegzuckert-dev/assets/83929799/a0af9981-a570-4304-b4f8-a459111d5e5e)
 
 
 ### TODO:
 
- - [ ] Configurar button para baixar o curriculo
- - [ ] Configurar Redirect para redes sociais ao clicar no botão
- - [ ] Fazer Deploy na Vercel
+ - [ ] Adicionar informações de e-mail
+ - [ ] Botão para beixar curriculo 
+ - [x] Configurar button para baixar o curriculo
+ - [x] Configurar Redirect para redes sociais ao clicar no botão
+ - [x] Fazer Deploy na Vercel
 
-## Getting Started
+## Starting project
 
 First, run the development server:
 
@@ -18,9 +20,6 @@ pnpm dev
 or
 pnpm run dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
 
 ## Deploy on Vercel
 
