@@ -114,6 +114,7 @@ export default function Home() {
               key={tecnologias.id}
               name={tecnologias.name}
               title={tecnologias.title}
+              image={tecnologias.image}
               fallbackImage={tecnologias.fallbackImage}
             />
           ))}
