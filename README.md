@@ -6,7 +6,7 @@
 ### TODO:
 
  - [ ] Adicionar informações de e-mail
- - [ ] Botão para beixar curriculo 
+ - [ ] Botão para baixar curriculo 
  - [x] Configurar button para baixar o curriculo
  - [x] Configurar Redirect para redes sociais ao clicar no botão
  - [x] Fazer Deploy na Vercel
