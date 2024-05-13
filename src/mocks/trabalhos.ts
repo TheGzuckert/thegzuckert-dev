@@ -13,21 +13,21 @@ export type Trabalho = {
 export const Trabalhos: Trabalho[] = [
   {
     id: nanoid(),
-    company: 'Bten',
-    title: 'Analista de Suporte e DBA',
-    location: 'São Paulo - Remoto',
-    date: 'Oct 17, 2022 - Atualmente',
-    image: '/BtenIcon.jpg',
-    fallbackImage: 'Bten',
-  },
-  {
-    id: nanoid(),
     company: 'Devhat',
     title: 'Desenvolvedor Web - Freelancer',
     location: 'São Paulo - Remoto',
     date: 'Nov 22, 2023 - Atualmente',
     image: '/Devhat.jpg',
     fallbackImage: 'Devhat',
+  },
+  {
+    id: nanoid(),
+    company: 'Bten',
+    title: 'Analista de Suporte e DBA',
+    location: 'São Paulo - Remoto',
+    date: 'Oct 17, 2022 - 01 Jun, 2024',
+    image: '/BtenIcon.jpg',
+    fallbackImage: 'Bten',
   },
   {
     id: nanoid(),

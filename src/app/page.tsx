@@ -57,9 +57,11 @@ export default function Home() {
                 </>
               )}
             </Badge>
-            <Badge variant={'outline'}>TheGzuckert</Badge>
             <Badge variant={'outline'}>22 - Anos</Badge>
             <Badge variant={'outline'}>IFSP</Badge>
+            <Badge variant={'outline'}>
+              E-mail: gustavo.santoszuckert@gmail.com
+            </Badge>
           </div>
           <div className="flex flex-col max-w-screen-sm">
             <h1 className="font-bold text-xl">Gustavo Dos Santos Zuckert</h1>
@@ -67,13 +69,10 @@ export default function Home() {
             <p className="mt-1 font-bold">Fullstack Developer</p>
 
             <p className="mt-1 mb-1 text-sm mr-2">
-              Desenvolvedor Web com seis meses de experiência. Hoje trabalho
-              como Analista de Suporte e DBA pela Bten, e Participo Atualmente
-              de uma comunidade Open Source chamada DevHat para ganhar mais
-              experiencia como desenvolvedor, entretanto estou aberto para novos
-              desafios.
+              Desenvolvedor Web com seis meses de experiência. Atualmente
+              participo de uma comunidade Open Source chamada DevHat para ganhar
+              mais experiencia de mercado e estou aberto a novas oportiunidades.
             </p>
-            {/* melhorar texto */}
           </div>
         </header>
         <section className="mt-4 max-w-screen-sm mr-4">
