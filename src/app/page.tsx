@@ -59,9 +59,8 @@ export default function Home() {
             </Badge>
             <Badge variant={'outline'}>22 - Anos</Badge>
             <Badge variant={'outline'}>IFSP</Badge>
-            <Badge variant={'outline'}>
-              E-mail: gustavo.santoszuckert@gmail.com
-            </Badge>
+            {/* // Deixar responsivo para que elementos fiquem um abaxo do outro no
+            mobile */}
           </div>
           <div className="flex flex-col max-w-screen-sm">
             <h1 className="font-bold text-xl">Gustavo Dos Santos Zuckert</h1>
