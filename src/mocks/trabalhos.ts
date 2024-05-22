@@ -14,7 +14,7 @@ export const Trabalhos: Trabalho[] = [
   {
     id: nanoid(),
     company: 'Devhat',
-    title: 'Desenvolvedor Web - Freelancer',
+    title: 'Desenvolvedor Web - Voluntario',
     location: 'São Paulo - Remoto',
     date: 'Nov 22, 2023 - Atualmente',
     image: '/Devhat.jpg',
