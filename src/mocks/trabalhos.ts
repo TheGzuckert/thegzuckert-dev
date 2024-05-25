@@ -23,7 +23,7 @@ export const Trabalhos: Trabalho[] = [
   {
     id: nanoid(),
     company: 'Bten',
-    title: 'Analista de Suporte e DBA',
+    title: 'Analista Dados Jr. e Suporte',
     location: 'São Paulo - Remoto',
     date: 'Oct 17, 2022 - 01 Jun, 2024',
     image: '/BtenIcon.jpg',
