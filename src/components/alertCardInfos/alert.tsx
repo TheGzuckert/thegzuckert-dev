@@ -14,10 +14,10 @@ import {
 import { Badge } from '../ui/badge'
 
 export function AlertCard() {
-  const fileUrl = '/Gustavo Curriculo.pdf'
+  const fileUrl = '/GustavoCurriculo.pdf'
 
   const downloadFile = () => {
-    saveAs(fileUrl, 'Gustavo Curriculo.pdf')
+    saveAs(fileUrl, 'GustavoCurriculo.pdf')
   }
 
   return (
