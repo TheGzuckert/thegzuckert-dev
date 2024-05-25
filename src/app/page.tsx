@@ -49,12 +49,12 @@ export default function Home() {
             >
               {darkmode ? (
                 <>
-                  <LuSunMoon className="text-yellow-500 mr-1" />
+                  <IoMdMoon className="text-yellow-500 mr-1 bg" />
                   Modo Escuro
                 </>
               ) : (
                 <>
-                  <IoMdMoon className="text-yellow-500 mr-1 bg" />
+                  <LuSunMoon className="text-yellow-500 mr-1" />
                   Modo Claro
                 </>
               )}
