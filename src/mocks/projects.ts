@@ -12,14 +12,13 @@ export const Projects: Projec[] = [
   {
     id: nanoid(),
     title: '🏡 Charty Institution',
-    image: '/github.svg',
+    image: '/charityInstitution.jpg',
     fallbackImage: 'Charty Institution',
     link: 'https://github.com/TheGzuckert/next-charty-institution',
   },
   {
     id: nanoid(),
     title: '📷 instagram',
-    image: '/instagram.svg',
     fallbackImage: 'Instagram',
     link: 'https://www.instagram.com/gustavozuckert/',
   },

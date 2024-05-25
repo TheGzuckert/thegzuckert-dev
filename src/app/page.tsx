@@ -10,6 +10,7 @@ import { CardSocial } from '@/components/card-social/cardSocial'
 import { Socials } from '@/mocks/social'
 import { CardTec } from '@/components/card-tecnologies/cardTec'
 import { Tecnologia } from '@/mocks/tecnologias'
+import { AlertCard } from '@/components/alertCardInfos/alert'
 // import { CardProjects } from '@/components/card-projects/card'
 // import { Projects } from '@/mocks/projects'
 
@@ -59,9 +60,12 @@ export default function Home() {
                 </>
               )}
             </Badge>
-            <Badge variant={'outline'}>22 - Anos</Badge>
+
+            <Badge variant={'outline'}>TheGzuckert</Badge>
+
             <Badge variant={'outline'}>IFSP</Badge>
-            <Badge variant={'outline'}>Contato</Badge>
+
+            <AlertCard />
           </div>
           <div className="flex flex-col max-w-screen-sm">
             <h1 className="font-bold text-xl">Gustavo Dos Santos Zuckert</h1>
@@ -118,7 +122,7 @@ export default function Home() {
             />
           ))}
         </section>
-        {/* <p className="font-bold mb-2 mt-4">📚 Projetos</p>
+        {/* <p className="font-bold mb-2 mt-4"> Projetos</p>
         <section className="grid grid-cols-2 grid-rows-2 mt-3.5">
           {Projects.map((projects) => (
             <CardProjects
@@ -130,6 +134,7 @@ export default function Home() {
             />
           ))}
         </section> */}
+        {/* Ajusr amanha para que senha um scroll para os projetos */}
       </div>
     </div>
   )
