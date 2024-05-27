@@ -35,15 +35,13 @@ export function AlertCard() {
               <br></br>
               Email: gustavo.santoszuckert@gmail.com <br></br>
               <br></br>
-              Telefone / WhatsApp: +55 (12) 981387335 <br></br>
-              <br></br>
               Ou clique no botão a baixo para baixar meu currículo
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
             <AlertDialogCancel>Voltar</AlertDialogCancel>
             <AlertDialogAction onClick={downloadFile}>
-              Baixar Curriculo
+              Curriculo
             </AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
