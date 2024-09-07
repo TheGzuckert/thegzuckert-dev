@@ -1,8 +1,8 @@
 import React from 'react'
-import { saveAs } from 'file-saver'
+// import { saveAs } from 'file-saver'
 import {
   AlertDialog,
-  AlertDialogAction,
+  // AlertDialogAction,
   AlertDialogCancel,
   AlertDialogContent,
   AlertDialogDescription,
@@ -14,11 +14,11 @@ import {
 import { Badge } from '../ui/badge'
 
 export function AlertCard() {
-  const fileUrl = '/GustavoCurriculo.pdf'
+  // const fileUrl = '/GustavoCurriculo.pdf'
 
-  const downloadFile = () => {
-    saveAs(fileUrl, 'GustavoCurriculo.pdf')
-  }
+  // const downloadFile = () => {
+  //   saveAs(fileUrl, 'GustavoCurriculo.pdf')
+  // }
 
   return (
     <>
@@ -33,16 +33,14 @@ export function AlertCard() {
             </AlertDialogTitle>
             <AlertDialogDescription>
               <br></br>
-              Email: gustavo.santoszuckert@gmail.com <br></br>
+              Email: gustavo.santoszuckert@gmail.com<br></br>
               <br></br>
-              Ou clique no botão a baixo para baixar meu currículo
+              Giithub: github.com/TheGzuckert
+              {/* colocar botão que direciona ao gihub */}
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
             <AlertDialogCancel>Voltar</AlertDialogCancel>
-            <AlertDialogAction onClick={downloadFile}>
-              Curriculo
-            </AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
