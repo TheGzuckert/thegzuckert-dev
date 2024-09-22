@@ -11,8 +11,6 @@ import { Socials } from '@/mocks/social'
 import { CardTec } from '@/components/card-tecnologies/cardTec'
 import { Tecnologia } from '@/mocks/tecnologias'
 import { AlertCard } from '@/components/alertCardInfos/alert'
-// import { CardProjects } from '@/components/card-projects/card'
-// import { Projects } from '@/mocks/projects'
 
 export default function Home() {
   const [darkmode, setDarkmode] = useState(false)
@@ -134,7 +132,6 @@ export default function Home() {
             />
           ))}
         </section> */}
-        {/* Ajusr amanha para que senha um scroll para os projetos */}
       </div>
     </div>
   )
