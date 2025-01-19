@@ -71,8 +71,8 @@ export default function Home() {
             <p className="mt-1 font-bold">Fullstack Developer</p>
 
             <p className="mt-1 mb-1 text-sm mr-2">
-              Ataulmente trabalho em uma empresa chamada Log Smart como
-              Desenvolvedor, sou responsavel por implementar novas features,
+              Atualmente trabalho em uma empresa chamada Log Smart como
+              Desenvolvedor, sou responsável por implementar novas features,
               correções de bugs e implementações de APIS com Laravel. Sou um
               apaixonado por tecnologia e estou sempre buscando aprender novas
               stacks e frameworks para melhorar minhas habilidades como
