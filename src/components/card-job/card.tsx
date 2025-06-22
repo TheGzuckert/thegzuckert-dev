@@ -1,8 +1,8 @@
-import { Badge } from "@/components/ui/badge";
-import React from "react";
-import { Avatar } from "../ui/avatar";
-import { AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
-import { Trabalho } from "@/mocks/trabalhos";
+import { Badge } from '@/components/ui/badge'
+import React from 'react'
+import { Avatar } from '../ui/avatar'
+import { AvatarFallback, AvatarImage } from '@radix-ui/react-avatar'
+import { Trabalho } from '@/mocks/trabalhos'
 
 export function Card(props: Trabalho) {
   return (
@@ -15,7 +15,7 @@ export function Card(props: Trabalho) {
       </span>
       <div className="justify-between flex-grow">
         <div className=" flex justify-between items-center">
-          <Badge className="bg-violet-500" variant={"default"}>
+          <Badge className="bg-violet-500" variant={'default'}>
             {props.company}
           </Badge>
           <p className="text-sm text-gray-400">{props.date}</p>
@@ -26,7 +26,7 @@ export function Card(props: Trabalho) {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Card;
+export default Card

@@ -1,7 +1,7 @@
-import React from "react";
-import { Projec } from "@/mocks/projects";
-import Link from "next/link";
-import Image from "next/image";
+import React from 'react'
+import { Projec } from '@/mocks/projects'
+import Link from 'next/link'
+import Image from 'next/image'
 
 export function CardProjects(props: Projec) {
   return (
@@ -9,8 +9,8 @@ export function CardProjects(props: Projec) {
       <span className="mr-4">
         <Link href={props.link}>
           <Image
-            src={props.image ?? ""}
-            alt={props.fallbackImage ?? ""}
+            src={props.image ?? ''}
+            alt={props.fallbackImage ?? ''}
             width={100}
             height={100}
             className="rounded-xl"
@@ -21,7 +21,7 @@ export function CardProjects(props: Projec) {
         </Link>
       </span>
     </div>
-  );
+  )
 }
 
-export default CardProjects;
+export default CardProjects

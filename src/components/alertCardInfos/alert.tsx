@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 // import { saveAs } from 'file-saver'
 import {
   AlertDialog,
@@ -10,8 +10,8 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
-import { Badge } from "../ui/badge";
+} from '@/components/ui/alert-dialog'
+import { Badge } from '../ui/badge'
 
 export function AlertCard() {
   // const fileUrl = '/GustavoCurriculo.pdf'
@@ -45,5 +45,5 @@ export function AlertCard() {
         </AlertDialogContent>
       </AlertDialog>
     </>
-  );
+  )
 }
