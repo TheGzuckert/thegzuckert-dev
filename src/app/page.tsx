@@ -121,18 +121,6 @@ export default function Home() {
               />
             ))}
           </section>
-          {/* <p className="font-bold mb-2 mt-4"> Projetos</p>
-          <section className="grid grid-cols-2 grid-rows-2 mt-3.5">
-            {Projects.map((projects) => (
-              <CardProjects
-                key={projects.id}
-                title={projects.title}
-                image={projects.image}
-                fallbackImage={projects.fallbackImage}
-                link={projects.link}
-              />
-            ))}
-          </section> */}
         </div>
       </div>
     </div>
