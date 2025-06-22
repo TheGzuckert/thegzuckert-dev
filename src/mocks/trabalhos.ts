@@ -14,7 +14,7 @@ export const Trabalhos: Trabalho[] = [
   {
     id: nanoid(),
     company: 'Log Smart',
-    title: 'Desenvolvedor Jr',
+    title: 'Desenvolvedor',
     location: 'São Paulo - São José dos Campos',
     date: 'Nov 23, 2024 - Atualmente',
     image: '/Logsmart.jpg',

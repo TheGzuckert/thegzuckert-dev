@@ -69,13 +69,17 @@ export default function Home() {
               <p className="mt-1 font-bold">Fullstack Developer</p>
 
               <p className="mt-1 mb-1 text-sm mr-2">
-                Atualmente trabalho em uma empresa chamada Log Smart como
-                Desenvolvedor, sou responsável por implementar novas features,
-                correções de bugs e implementações de APIS com Laravel. Sou um
-                apaixonado por tecnologia e estou sempre buscando aprender novas
-                stacks e frameworks para melhorar minhas habilidades como
-                desenvolvedor.
+                Atualmente, trabalho como desenvolvedor na empresa Log Smart e, no
+                meu dia a dia, sou responsável por implementar novas
+                funcionalidades, corrigir bugs e desenvolver APIs com Laravel.
               </p>
+
+              <p className="mt-1 mb-1 text-sm mr-2">
+                Como profissional, sou apaixonado por tecnologia e estou sempre
+                buscando aprender novas stacks e frameworks para aprimorar
+                minhas habilidades como desenvolvedor.
+              </p>
+
             </div>
           </header>
           <section className="mt-4 max-w-screen-sm mr-4">
