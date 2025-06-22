@@ -1,7 +1,7 @@
-import React from 'react'
-import { Avatar } from '../ui/avatar'
-import { AvatarFallback, AvatarImage } from '@radix-ui/react-avatar'
-import { Tecnologia } from '@/mocks/tecnologias'
+import React from "react";
+import { Avatar } from "../ui/avatar";
+import { AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
+import { Tecnologia } from "@/mocks/tecnologias";
 
 export function CardTec(props: Tecnologia) {
   return (
@@ -14,5 +14,5 @@ export function CardTec(props: Tecnologia) {
         <p className="mt-2 text-sm text-center sm:text-left">{props.name}</p>
       </div>
     </div>
-  )
+  );
 }

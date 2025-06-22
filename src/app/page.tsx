@@ -1,27 +1,27 @@
-'use client'
-import React, { useState, useEffect } from 'react'
-import { Badge } from '@/components/ui/badge'
-import { LuSunMoon } from 'react-icons/lu'
-import { IoMdMoon } from 'react-icons/io'
-import { Card } from '@/components/card-job/card'
-import { Trabalhos } from '@/mocks/trabalhos'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { CardSocial } from '@/components/card-social/cardSocial'
-import { Socials } from '@/mocks/social'
-import { CardTec } from '@/components/card-tecnologies/cardTec'
-import { Tecnologia } from '@/mocks/tecnologias'
-import { AlertCard } from '@/components/alertCardInfos/alert'
+"use client";
+import React, { useState, useEffect } from "react";
+import { Badge } from "@/components/ui/badge";
+import { LuSunMoon } from "react-icons/lu";
+import { IoMdMoon } from "react-icons/io";
+import { Card } from "@/components/card-job/card";
+import { Trabalhos } from "@/mocks/trabalhos";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { CardSocial } from "@/components/card-social/cardSocial";
+import { Socials } from "@/mocks/social";
+import { CardTec } from "@/components/card-tecnologies/cardTec";
+import { Tecnologia } from "@/mocks/tecnologias";
+import { AlertCard } from "@/components/alertCardInfos/alert";
 
 export default function Home() {
-  const [darkmode, setDarkmode] = useState(false)
+  const [darkmode, setDarkmode] = useState(false);
 
   const toggleDarkMode = () => {
-    setDarkmode(!darkmode)
-  }
+    setDarkmode(!darkmode);
+  };
 
   useEffect(() => {
-    document.body.classList.toggle('dark', darkmode)
-  }, [darkmode])
+    document.body.classList.toggle("dark", darkmode);
+  }, [darkmode]);
 
   return (
     <div className="container mx-auto px-4 py-8 lg:py-12">
@@ -40,9 +40,9 @@ export default function Home() {
             <div className="flex cursor-pointer">
               <Badge
                 className="text-xs"
-                variant={'outline'}
+                variant={"outline"}
                 onClick={toggleDarkMode}
-                style={{ cursor: 'pointer' }}
+                style={{ cursor: "pointer" }}
               >
                 {darkmode ? (
                   <>
@@ -57,9 +57,9 @@ export default function Home() {
                 )}
               </Badge>
 
-              <Badge variant={'outline'}>TheGzuckert</Badge>
+              <Badge variant={"outline"}>TheGzuckert</Badge>
 
-              <Badge variant={'outline'}>IFSP</Badge>
+              <Badge variant={"outline"}>IFSP</Badge>
 
               <AlertCard />
             </div>
@@ -69,8 +69,8 @@ export default function Home() {
               <p className="mt-1 font-bold">Fullstack Developer</p>
 
               <p className="mt-1 mb-1 text-sm mr-2">
-                Atualmente, trabalho como desenvolvedor na empresa Log Smart e, no
-                meu dia a dia, sou responsável por implementar novas
+                Atualmente, trabalho como desenvolvedor na empresa Log Smart e,
+                no meu dia a dia, sou responsável por implementar novas
                 funcionalidades, corrigir bugs e desenvolver APIs com Laravel.
               </p>
 
@@ -79,7 +79,6 @@ export default function Home() {
                 buscando aprender novas stacks e frameworks para aprimorar
                 minhas habilidades como desenvolvedor.
               </p>
-
             </div>
           </header>
           <section className="mt-4 max-w-screen-sm mr-4">
@@ -137,5 +136,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-  )
+  );
 }

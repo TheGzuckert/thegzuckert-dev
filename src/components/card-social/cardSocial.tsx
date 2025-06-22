@@ -1,8 +1,8 @@
-import React from 'react'
-import { Avatar } from '../ui/avatar'
-import { Social } from '@/mocks/social'
-import { AvatarFallback, AvatarImage } from '@radix-ui/react-avatar'
-import Link from 'next/link'
+import React from "react";
+import { Avatar } from "../ui/avatar";
+import { Social } from "@/mocks/social";
+import { AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
+import Link from "next/link";
 
 export function CardSocial(props: Social) {
   return (
@@ -18,7 +18,7 @@ export function CardSocial(props: Social) {
         <p className="mt-2 text-sm text-center sm:text-left">{props.title}</p>
       </Link>
     </div>
-  )
+  );
 }
 
-export default CardSocial
+export default CardSocial;
