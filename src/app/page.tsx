@@ -20,6 +20,11 @@ export default function Home() {
   }
 
   useEffect(() => {
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+    setDarkmode(prefersDark)
+  }, [])
+
+  useEffect(() => {
     document.body.classList.toggle('dark', darkmode)
   }, [darkmode])
 
