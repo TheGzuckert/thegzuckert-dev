@@ -15,10 +15,10 @@ export function Card(props: Trabalho) {
       </span>
       <div className="justify-between flex-grow">
         <div className=" flex justify-between items-center">
-          <Badge className="bg-violet-500" variant={'default'}>
+          <Badge className="bg-violet-500 whitespace-nowrap" variant={'default'}>
             {props.company}
           </Badge>
-          <p className="text-sm text-gray-400">{props.date}</p>
+          <p className="text-sm text-gray-400 ml-4">{props.date}</p>
         </div>
         <div className="flex flex-col">
           <p className="text-sm">{props.title}</p>
