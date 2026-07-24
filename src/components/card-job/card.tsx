@@ -1,28 +1,64 @@
 import { Badge } from '@/components/ui/badge'
-import React from 'react'
-import { Avatar } from '../ui/avatar'
-import { AvatarFallback, AvatarImage } from '@radix-ui/react-avatar'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Trabalho } from '@/mocks/trabalhos'
+import { cn } from '@/lib/utils'
 
-export function Card(props: Trabalho) {
+type CardProps = Trabalho & {
+  isFirst?: boolean
+  isLast?: boolean
+}
+
+export function Card({
+  company,
+  date,
+  title,
+  location,
+  image,
+  fallbackImage,
+  isFirst,
+}: CardProps) {
   return (
-    <div className="cursor-pointer mb-2 rounded-sm bg-card/25 text-foreground hover:bg-secondary/50 border p-4 backdrop-brightness-110 transition-all duration-150 dark:shadow-black/15 flex items-start">
-      <span className="mr-4">
-        <Avatar className="mb-2 flex flex-shrink-0 rounded-xl">
-          <AvatarImage src={props.image} alt={props.company}></AvatarImage>
-          <AvatarFallback>{props.fallbackImage}</AvatarFallback>
-        </Avatar>
-      </span>
-      <div className="justify-between flex-grow">
-        <div className=" flex justify-between items-center">
-          <Badge className="bg-violet-500 whitespace-nowrap" variant={'default'}>
-            {props.company}
-          </Badge>
-          <p className="text-sm text-gray-400 ml-4">{props.date}</p>
-        </div>
-        <div className="flex flex-col">
-          <p className="text-sm">{props.title}</p>
-          <h2 className="text-sm text-gray-400">{props.location}</h2>
+    <div className="group relative pl-8">
+      <div
+        className={cn(
+          'absolute -left-[9px] top-1 h-3.5 w-3.5 rounded-full border-2 bg-background transition-colors',
+          isFirst
+            ? 'border-foreground group-hover:bg-foreground'
+            : 'border-border group-hover:border-foreground',
+        )}
+      />
+      <div className="surface-panel surface-panel-hover rounded-lg p-5">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+          <div className="min-w-0 flex-1">
+            <div className="mb-2 flex items-center gap-3">
+              <Avatar className="h-10 w-10 shrink-0 rounded border border-border bg-white p-1">
+                <AvatarImage
+                  src={image}
+                  alt={company}
+                  className="object-contain"
+                />
+                <AvatarFallback className="rounded text-xs font-bold text-black">
+                  {fallbackImage?.slice(0, 2) ?? company.slice(0, 2)}
+                </AvatarFallback>
+              </Avatar>
+              <Badge
+                variant="outline"
+                className={cn(
+                  'max-w-full truncate rounded-md font-mono text-label-sm',
+                  isFirst
+                    ? 'border-foreground/20 bg-foreground/5 text-foreground'
+                    : 'text-on-surface-variant',
+                )}
+              >
+                {company}
+              </Badge>
+            </div>
+            <h4 className="text-lg font-semibold text-foreground">{title}</h4>
+            <p className="text-body-md text-on-surface-variant">{location}</p>
+          </div>
+          <p className="shrink-0 font-mono text-label-sm text-muted-foreground sm:pt-1 sm:text-right">
+            {date}
+          </p>
         </div>
       </div>
     </div>

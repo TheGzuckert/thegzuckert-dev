@@ -11,10 +11,10 @@ export type Tecnologia = {
 export const Tecnologia: Tecnologia[] = [
   {
     id: nanoid(),
-    name: 'Express.js',
-    title: 'Express.js',
-    image: '/express.svg',
-    fallbackImage: 'tailwind',
+    name: 'React',
+    title: 'React',
+    image: '/react.svg',
+    fallbackImage: 'react',
   },
   {
     id: nanoid(),
@@ -32,9 +32,24 @@ export const Tecnologia: Tecnologia[] = [
   },
   {
     id: nanoid(),
-    name: 'React',
-    title: 'React',
-    image: '/react.svg',
-    fallbackImage: 'react',
+    name: 'Express.js',
+    title: 'Express.js',
+    image: '/express.svg',
+    fallbackImage: 'tailwind',
   },
+  {
+    id: nanoid(),
+    name: 'Laravel',
+    title: 'Laravel',
+    image: '/laravel.svg',
+    fallbackImage: 'tailwind',
+  },
+  {
+    id: nanoid(),
+    name: 'Go',
+    title: 'Go',
+    image: '/go.svg',
+    fallbackImage: 'tailwind',
+  },
+
 ]
