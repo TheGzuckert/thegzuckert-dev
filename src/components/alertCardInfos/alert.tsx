@@ -1,8 +1,8 @@
+'use client'
+
 import React from 'react'
-// import { saveAs } from 'file-saver'
 import {
   AlertDialog,
-  // AlertDialogAction,
   AlertDialogCancel,
   AlertDialogContent,
   AlertDialogDescription,
@@ -11,39 +11,32 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from '@/components/ui/alert-dialog'
-import { Badge } from '../ui/badge'
+import { Badge } from '@/components/ui/badge'
 
-export function AlertCard() {
-  // const fileUrl = '/GustavoCurriculo.pdf'
+type AlertCardProps = {
+  trigger?: React.ReactNode
+}
 
-  // const downloadFile = () => {
-  //   saveAs(fileUrl, 'GustavoCurriculo.pdf')
-  // }
-
+export function AlertCard({ trigger }: AlertCardProps) {
   return (
-    <>
-      <AlertDialog>
-        <AlertDialogTrigger asChild>
-          <Badge variant="outline">Contato</Badge>
-        </AlertDialogTrigger>
-        <AlertDialogContent>
-          <AlertDialogHeader>
-            <AlertDialogTitle>
-              Caso queria entrar em contato comigo:
-            </AlertDialogTitle>
-            <AlertDialogDescription>
-              <br></br>
-              Email: gustavo.santoszuckert@gmail.com<br></br>
-              <br></br>
-              Giithub: github.com/TheGzuckert
-              {/* colocar botão que direciona ao gihub */}
-            </AlertDialogDescription>
-          </AlertDialogHeader>
-          <AlertDialogFooter>
-            <AlertDialogCancel>Voltar</AlertDialogCancel>
-          </AlertDialogFooter>
-        </AlertDialogContent>
-      </AlertDialog>
-    </>
+    <AlertDialog>
+      <AlertDialogTrigger asChild>
+        {trigger ?? <Badge variant="outline">Contato</Badge>}
+      </AlertDialogTrigger>
+      <AlertDialogContent className="border-white/10 bg-surface">
+        <AlertDialogHeader>
+          <AlertDialogTitle>Entre em contato</AlertDialogTitle>
+          <AlertDialogDescription className="space-y-2 text-on-surface-variant">
+            <span className="block">
+              Email: gustavo.santoszuckert@gmail.com
+            </span>
+            <span className="block">Github: github.com/TheGzuckert</span>
+          </AlertDialogDescription>
+        </AlertDialogHeader>
+        <AlertDialogFooter>
+          <AlertDialogCancel>Voltar</AlertDialogCancel>
+        </AlertDialogFooter>
+      </AlertDialogContent>
+    </AlertDialog>
   )
 }

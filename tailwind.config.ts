@@ -52,11 +52,54 @@ const config = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        surface: {
+          DEFAULT: 'hsl(var(--surface))',
+          container: 'hsl(var(--surface-container))',
+          'container-high': 'hsl(var(--surface-container-high))',
+          'container-highest': 'hsl(var(--surface-container-highest))',
+          'container-lowest': 'hsl(var(--surface-container-lowest))',
+        },
+        'on-surface-variant': 'hsl(var(--on-surface-variant))',
+        'inverse-primary': 'hsl(var(--inverse-primary))',
       },
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
+      },
+      spacing: {
+        'margin-desktop': '64px',
+        'margin-mobile': '20px',
+        'component-gap': '16px',
+        'container-max': '1280px',
+        'section-gap': '120px',
+        gutter: '24px',
+      },
+      maxWidth: {
+        'container-max': '1280px',
+      },
+      fontFamily: {
+        sans: ['var(--font-hanken)', 'sans-serif'],
+        mono: ['var(--font-jetbrains)', 'monospace'],
+      },
+      fontSize: {
+        'headline-2xl': [
+          '72px',
+          { lineHeight: '1.1', letterSpacing: '-0.04em', fontWeight: '800' },
+        ],
+        'headline-xl': [
+          '48px',
+          { lineHeight: '1.2', letterSpacing: '-0.02em', fontWeight: '700' },
+        ],
+        'headline-lg': ['32px', { lineHeight: '1.3', fontWeight: '600' }],
+        'headline-lg-mobile': ['28px', { lineHeight: '1.3', fontWeight: '600' }],
+        'body-lg': ['18px', { lineHeight: '1.6', fontWeight: '400' }],
+        'body-md': ['16px', { lineHeight: '1.6', fontWeight: '400' }],
+        'label-md': [
+          '14px',
+          { lineHeight: '1.2', letterSpacing: '0.05em', fontWeight: '500' },
+        ],
+        'label-sm': ['12px', { lineHeight: '1.2', fontWeight: '500' }],
       },
       keyframes: {
         'accordion-down': {
