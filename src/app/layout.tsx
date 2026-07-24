@@ -1,12 +1,22 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Hanken_Grotesk, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const hanken = Hanken_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-hanken',
+  weight: ['400', '600', '700', '800'],
+})
+
+const jetbrains = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-jetbrains',
+  weight: ['500'],
+})
 
 export const metadata: Metadata = {
-  title: 'Gustavo Zuckert',
-  description: 'Portofolio de Gustavo Zuckert',
+  title: 'Gustavo Zuckert - Fullstack Developer',
+  description: 'Portfólio de Gustavo Zuckert',
 }
 
 export default function RootLayout({
@@ -15,8 +25,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt">
-      <body className={inter.className}>{children}</body>
+    <html lang="pt" className="dark" suppressHydrationWarning>
+      <body
+        className={`${hanken.variable} ${jetbrains.variable} font-sans overflow-x-hidden`}
+      >
+        {children}
+      </body>
     </html>
   )
 }

@@ -1,23 +1,29 @@
-import React from 'react'
-import { Avatar } from '../ui/avatar'
-import { Social } from '@/mocks/social'
-import { AvatarFallback, AvatarImage } from '@radix-ui/react-avatar'
 import Link from 'next/link'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Social } from '@/mocks/social'
 
-export function CardSocial(props: Social) {
+export function CardSocial({ title, image, fallbackImage, link }: Social) {
+  const label = fallbackImage ?? title
+
   return (
-    <div className="cursor-pointer mb-2 rounded-sm bg-card/25 text-foreground hover:bg-secondary/50 border p-4 sm:p-7 mr-2 backdrop-brightness-110 transition-all duration-150 dark:shadow-black/15">
-      <Link
-        href={props.link}
-        className="flex flex-col items-center sm:items-start"
-      >
-        <Avatar className="rounded-xl w-12 h-12 sm:w-16 sm:h-16">
-          <AvatarImage src={props.image}></AvatarImage>
-          <AvatarFallback>{props.fallbackImage}</AvatarFallback>
+    <Link
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="surface-panel surface-panel-hover group flex min-h-[112px] flex-col items-center justify-center gap-3 rounded-lg p-4"
+    >
+      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-surface-container-highest">
+        <Avatar className="h-6 w-6 rounded-none bg-transparent">
+          <AvatarImage src={image} alt={label} className="object-contain" />
+          <AvatarFallback className="bg-transparent text-xs">
+            {label.slice(0, 2)}
+          </AvatarFallback>
         </Avatar>
-        <p className="mt-2 text-sm text-center sm:text-left">{props.title}</p>
-      </Link>
-    </div>
+      </div>
+      <span className="font-mono text-label-sm text-on-surface-variant">
+        {label}
+      </span>
+    </Link>
   )
 }
 

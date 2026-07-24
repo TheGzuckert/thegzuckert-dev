@@ -1,18 +1,22 @@
-import React from 'react'
-import { Avatar } from '../ui/avatar'
-import { AvatarFallback, AvatarImage } from '@radix-ui/react-avatar'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Tecnologia } from '@/mocks/tecnologias'
 
-export function CardTec(props: Tecnologia) {
+export function CardTec({ name, image, fallbackImage }: Tecnologia) {
   return (
-    <div className="cursor-pointer mb-2 rounded-sm bg-card/25 text-foreground hover:bg-secondary/50 border p-4 sm:p-7 mr-2 backdrop-brightness-110 transition-all duration-150 dark:shadow-black/15">
-      <div className="flex flex-col items-center sm:items-start">
-        <Avatar className="rounded-xl w-12 h-12 sm:w-16 sm:h-16">
-          <AvatarImage src={props.image}></AvatarImage>
-          <AvatarFallback>{props.fallbackImage}</AvatarFallback>
+    <div className="surface-panel surface-panel-hover group flex aspect-square flex-col items-center justify-center gap-2 rounded-lg p-3 sm:p-4">
+      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-surface-container-high transition-transform group-hover:scale-105 sm:h-14 sm:w-14">
+        <Avatar className="h-8 w-8 rounded-none bg-transparent sm:h-9 sm:w-9">
+          <AvatarImage src={image} alt={name} className="object-contain" />
+          <AvatarFallback className="bg-transparent text-sm font-bold text-on-surface-variant">
+            {fallbackImage?.slice(0, 2) ?? name.slice(0, 2)}
+          </AvatarFallback>
         </Avatar>
-        <p className="mt-2 text-sm text-center sm:text-left">{props.name}</p>
       </div>
+      <span className="text-center font-mono text-label-sm text-on-surface-variant">
+        {name}
+      </span>
     </div>
   )
 }
+
+export default CardTec
