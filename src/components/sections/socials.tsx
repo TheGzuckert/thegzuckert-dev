@@ -8,7 +8,7 @@ export function Socials() {
     <section id="contact" className="space-y-6 lg:col-span-3">
       <SectionHeader icon={Share2} title="Redes Sociais" />
 
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-2 gap-2">
         {SocialsMock.map((social) => (
           <CardSocial
             key={social.id}

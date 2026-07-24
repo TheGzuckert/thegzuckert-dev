@@ -8,7 +8,7 @@ export function Technologies() {
     <section id="stack" className="space-y-6 lg:col-span-3">
       <SectionHeader icon={Layers} title="Principais Tecnologias" />
 
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-2 gap-2">
         {Tecnologia.map((tecnologia) => (
           <CardTec
             key={tecnologia.id}
