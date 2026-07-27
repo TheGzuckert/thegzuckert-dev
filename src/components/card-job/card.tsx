@@ -18,19 +18,22 @@ export function Card({
   isFirst,
 }: CardProps) {
   return (
-    <div className="group relative pl-8">
-      <div
-        className={cn(
-          'absolute -left-[9px] top-1 h-3.5 w-3.5 rounded-full border-2 bg-background transition-colors',
-          isFirst
-            ? 'border-foreground group-hover:bg-foreground'
-            : 'border-border group-hover:border-foreground',
-        )}
-      />
-      <div className="surface-panel surface-panel-hover rounded-lg p-5">
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+    <div className="group flex min-w-0 gap-3 sm:gap-4">
+      <div className="flex w-3.5 shrink-0 justify-center pt-5">
+        <div
+          className={cn(
+            'relative z-10 h-3.5 w-3.5 rounded-full border-2 bg-background transition-colors',
+            isFirst
+              ? 'border-foreground group-hover:bg-foreground'
+              : 'border-border group-hover:border-foreground',
+          )}
+        />
+      </div>
+
+      <div className="surface-panel surface-panel-hover min-w-0 flex-1 rounded-lg p-4 sm:p-5">
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
           <div className="min-w-0 flex-1">
-            <div className="mb-2 flex items-center gap-3">
+            <div className="mb-2 flex items-start gap-3">
               <Avatar className="h-10 w-10 shrink-0 rounded border border-border bg-white p-1">
                 <AvatarImage
                   src={image}
@@ -44,7 +47,7 @@ export function Card({
               <Badge
                 variant="outline"
                 className={cn(
-                  'max-w-full truncate rounded-md font-mono text-label-sm',
+                  'h-auto min-w-0 flex-1 whitespace-normal rounded-md px-2.5 py-1 text-left font-mono text-xs leading-snug',
                   isFirst
                     ? 'border-foreground/20 bg-foreground/5 text-foreground'
                     : 'text-on-surface-variant',
@@ -53,10 +56,14 @@ export function Card({
                 {company}
               </Badge>
             </div>
-            <h4 className="text-lg font-semibold text-foreground">{title}</h4>
-            <p className="text-body-md text-on-surface-variant">{location}</p>
+            <h4 className="text-base font-semibold text-foreground sm:text-lg">
+              {title}
+            </h4>
+            <p className="text-sm text-on-surface-variant sm:text-body-md">
+              {location}
+            </p>
           </div>
-          <p className="shrink-0 font-mono text-label-sm text-muted-foreground sm:pt-1 sm:text-right">
+          <p className="shrink-0 font-mono text-xs text-muted-foreground sm:text-label-sm">
             {date}
           </p>
         </div>

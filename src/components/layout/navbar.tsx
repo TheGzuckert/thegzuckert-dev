@@ -25,42 +25,53 @@ export function Navbar() {
   const [open, setOpen] = useState(false)
   const [active, setActive] = useState('#about')
 
+  const hireMeButton = (className?: string) => (
+    <Button
+      size="sm"
+      className={cn(
+        'h-9 shrink-0 rounded-md bg-foreground px-4 font-mono text-xs uppercase tracking-wide text-background hover:bg-foreground/90 hover:text-background',
+        className,
+      )}
+    >
+      Hire Me
+    </Button>
+  )
+
   return (
-    <nav className="fixed top-0 z-40 w-full border-b border-border bg-background/90 backdrop-blur-md transition-all duration-300">
-      <div className="mx-auto flex h-20 max-w-container-max items-center justify-between px-margin-mobile md:px-margin-desktop">
+    <nav className="fixed top-0 z-40 w-full border-b border-border bg-background/90 backdrop-blur-md">
+      <div className="mx-auto flex h-16 max-w-container-max items-center justify-between gap-4 px-margin-mobile md:h-[4.5rem] md:px-margin-desktop">
         <Link
           href="#about"
-          className="cursor-pointer text-headline-lg font-extrabold tracking-tighter text-foreground transition-opacity hover:opacity-70"
+          className="shrink-0 text-lg font-extrabold tracking-tighter text-foreground transition-opacity hover:opacity-70 md:text-xl lg:text-headline-lg"
         >
           GUSTAVO ZUCKERT
         </Link>
 
-        <div className="hidden items-center space-x-8 md:flex">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              onClick={() => setActive(link.href)}
-              className={cn(
-                'font-mono text-label-md uppercase tracking-widest transition-colors duration-200',
-                active === link.href
-                  ? 'border-b border-foreground pb-1 font-semibold text-foreground'
-                  : 'text-on-surface-variant hover:text-foreground',
-              )}
-            >
-              {link.label}
-            </a>
-          ))}
-        </div>
+        <div className="hidden items-center gap-5 md:flex lg:gap-8">
+          <div className="flex items-center gap-5 lg:gap-8">
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={() => setActive(link.href)}
+                className={cn(
+                  'whitespace-nowrap font-mono text-label-md uppercase tracking-widest transition-colors duration-200',
+                  active === link.href
+                    ? 'font-semibold text-foreground underline decoration-foreground decoration-1 underline-offset-[6px]'
+                    : 'text-on-surface-variant hover:text-foreground',
+                )}
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
 
-        <div className="hidden md:block">
-          <AlertCard
-            trigger={
-              <Button className="rounded-md bg-foreground px-6 font-mono text-label-md text-background hover:bg-foreground/90 hover:text-background">
-                Hire Me
-              </Button>
-            }
+          <span
+            className="mx-1 h-4 w-px shrink-0 bg-border lg:mx-2"
+            aria-hidden
           />
+
+          <AlertCard trigger={hireMeButton()} />
         </div>
 
         <Sheet open={open} onOpenChange={setOpen}>
@@ -68,10 +79,10 @@ export function Navbar() {
             <Button
               variant="ghost"
               size="icon"
-              className="text-foreground md:hidden"
+              className="h-9 w-9 shrink-0 text-foreground md:hidden"
               aria-label="Abrir menu"
             >
-              <Menu className="h-7 w-7" />
+              <Menu className="h-5 w-5" />
             </Button>
           </SheetTrigger>
           <SheetContent
@@ -95,13 +106,7 @@ export function Navbar() {
                   {link.label}
                 </a>
               ))}
-              <AlertCard
-                trigger={
-                  <Button className="mt-2 w-full bg-foreground font-mono text-label-md text-background hover:bg-foreground/90 hover:text-background">
-                    Hire Me
-                  </Button>
-                }
-              />
+              <AlertCard trigger={hireMeButton('mt-2 w-full')} />
             </div>
           </SheetContent>
         </Sheet>
