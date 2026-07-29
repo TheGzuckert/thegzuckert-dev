@@ -88,9 +88,9 @@ export function Hero({ darkmode, onToggleDarkMode }: HeroProps) {
         <div className="relative h-72 w-72 md:h-96 md:w-96">
           <Avatar className="relative z-10 h-full w-full rounded-2xl border border-border bg-card p-1">
             <AvatarImage
-              src="https://github.com/TheGzuckert.png"
+              src="/eueu.jpg"
               alt="Gustavo Zuckert"
-              className="rounded-xl object-cover"
+              className="rounded-xl object-cover object-[center_19%]"
             />
             <AvatarFallback className="rounded-xl text-2xl">GZ</AvatarFallback>
           </Avatar>
