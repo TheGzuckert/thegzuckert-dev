@@ -13,7 +13,7 @@ export type Trabalho = {
 export const Trabalhos: Trabalho[] = [
   {
     id: nanoid(),
-    company: 'Multfacil Comercial / Evolution',
+    company: 'Evolution',
     title: 'Desenvolvedor Full Stack',
     location: 'São Paulo - São José dos Campos',
     date: 'Jan 2026 - Present',
